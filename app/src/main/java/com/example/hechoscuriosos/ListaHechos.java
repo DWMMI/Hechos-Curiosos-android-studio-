@@ -4,7 +4,8 @@ import java.util.Random;
 
 public class ListaHechos {
 
-    String [] curiosidades = new String[10];
+    String[] curiosidades = new String[10];
+
     {
         curiosidades[0] = "Hidrógeno (H):Es el elemento más abundante en el universo, constituyendo aproximadamente el 75% de su masa. Se utiliza en cohetes espaciales y es la fuente de energía en las reacciones de fusión nuclear.";
         curiosidades[1] = "Oxígeno (O):Es esencial para la respiración aeróbica en la mayoría de los seres vivos.A pesar de ser necesario para la vida, es altamente reactivo y puede causar corrosión.";
@@ -17,6 +18,7 @@ public class ListaHechos {
         curiosidades[8] = "Yodo (I):Es un elemento esencial para el funcionamiento de la glándula tiroides en el cuerpo humano.A menudo se utiliza en desinfectantes y tinturas de piel.";
         curiosidades[9] = "Uranio (U):Se utiliza como combustible en reactores nucleares para producir energía eléctrica.Tiene isótopos que son inestables y se desintegran radiactivamente, lo que lo hace importante en la datación por radiocarbono.";
     }
+
     public String getHechoAleatorio() {
         //Seleccionar un hecho aleatorio
         Random randomGenerator = new Random();
