@@ -31,5 +31,6 @@ public class MainActivity extends AppCompatActivity {
 
         TextView modificar = findViewById(R.id.textView9);
         modificar.setText(curiosidades[valorAleatorio]);
+
     }
 }
