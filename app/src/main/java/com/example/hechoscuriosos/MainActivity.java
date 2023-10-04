@@ -2,10 +2,12 @@ package com.example.hechoscuriosos;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
-import android.view.textclassifier.TextSelection;
 import android.widget.TextView;
+
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,6 +33,15 @@ public class MainActivity extends AppCompatActivity {
 
         TextView modificar = findViewById(R.id.textView9);
         modificar.setText(curiosidades[valorAleatorio]);
-
+        cambiarColorDeFondo();
+    }
+    private void cambiarColorDeFondo() {
+        Random random = new Random();
+        int red = random.nextInt(256);
+        int green = random.nextInt(256);
+        int blue = random.nextInt(256);
+        int color = Color.rgb(red, green, blue);
+        View view = getWindow().getDecorView();
+        view.setBackgroundColor(color);
     }
 }
