@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nombre">有趣事实</string>
+    <string name="hecho0">氢（H）：是宇宙中最丰富的元素，约占其质量的75%。它用于太空火箭，也是核聚变反应中的能源来源。</string>
+    <string name="hecho1">氧（O）：对大多数生物的有氧呼吸至关重要。尽管对生命必不可少，但它具有高反应性，可能引起腐蚀。</string>
+    <string name="hecho2">碳（C）：是有机化学的基础，构成生物分子如DNA和蛋白质的支架。它有多种同素异形体，包括金刚石和石墨。</string>
+    <string name="hecho3">铁（Fe）：是地球上最丰富的金属之一，对钢铁制造至关重要。血红蛋白是血液中运输氧气的物质，其中含有铁。</string>
+    <string name="hecho4">氖（Ne）：因其在电激发时产生明亮的红光而用于霓虹灯标志。它是一种惰性气体，不容易与其他元素发生反应。</string>
+    <string name="hecho5">钙（Ca）：对人类和其他动物的骨骼和牙齿形成至关重要。它还用于水泥制造和食品工业。</string>
+    <string name="hecho6">铜（Cu）：是电导体，广泛用于电缆和电线。它具有抗菌性能，常用于医院接触表面。</string>
+    <string name="hecho7">银（Ag）：是一种贵金属，以其光泽和历史价值而闻名。它具有抗菌性能，广泛用于医疗和卫生应用。</string>
+    <string name="hecho8">碘（I）：对人体甲状腺功能至关重要。通常用于消毒剂和皮肤染料。</string>
+    <string name="hecho9">铀（U）：用作核反应堆的燃料以产生电能。它具有不稳定的同位素，放射性衰变在放射性碳定年法中起重要作用。</string>
+</resources>
