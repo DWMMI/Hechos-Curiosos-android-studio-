@@ -87,4 +87,19 @@ Tiene isótopos que son inestables y se desintegran radiactivamente, lo que lo h
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/button3" />
 
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="163dp"
+        android:layout_height="68dp"
+        android:checked="false"
+        android:onClick="CChanged"
+        android:text="CheckBox"
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintVertical_bias="0.731" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

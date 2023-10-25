@@ -2,22 +2,28 @@ package com.example.hechoscuriosos;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.core.view.TintableBackgroundView;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    ListaHechos listaHechos = new ListaHechos();
-    ColoresFondo coloresFondo = new ColoresFondo();
+    ListaHechos listaHechos;
+    ColoresFondo coloresFondo;
+    CheckBox checkBox;
+    Button boton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        listaHechos = new ListaHechos();
+        coloresFondo = new ColoresFondo();
+        checkBox = findViewById(R.id.checkBox);
+         boton = findViewById(R.id.button);
     }
 
     public void onBtnClic(View view) {
@@ -30,26 +36,39 @@ public class MainActivity extends AppCompatActivity {
 
     //diferentes onBtnClic, este es el segundo botón
     public void onBtnClic1(View view) {
-        TextView modificar1 = findViewById(R.id.textView9);
-        View modColor = findViewById(R.id.backgroudid);
-        mostrarHecho1(modificar1);
-        coloresFondo1();
+        if (checkBox.isChecked()) {
+            onBtnClic(boton);
+        } else {
+            TextView modificar1 = findViewById(R.id.textView9);
+            View modColor = findViewById(R.id.backgroudid);
+            mostrarHecho1(modificar1);
+            coloresFondo1();
+        }
+
     }
 
     //Método onClic del botón 2
     public void onBtnClic2(View view) {
-        TextView modificar2 = findViewById(R.id.textView9);
-        View modColor = findViewById(R.id.backgroudid);
-        mostrarHecho2(modificar2);
-        coloresFondo2();
+        if (checkBox.isChecked()) {
+            boton.performClick();
+        } else {
+            TextView modificar2 = findViewById(R.id.textView9);
+            View modColor = findViewById(R.id.backgroudid);
+            mostrarHecho2(modificar2);
+            coloresFondo2();
+        }
     }
 
     public void onBtnClic3(View view) {
-        TextView modificar3 = findViewById(R.id.textView9);
-        ConstraintLayout modColor = findViewById(R.id.backgroudid);
-        //todo
-        mostrarHecho3(modificar3);
-        coloresFondo();
+        if (checkBox.isChecked()) {
+           boton.callOnClick();
+        } else {
+            TextView modificar3 = findViewById(R.id.textView9);
+            ConstraintLayout modColor = findViewById(R.id.backgroudid);
+            //todo
+            mostrarHecho3(modificar3);
+            coloresFondo();
+        }
     }
 
     public void mostrarHecho(TextView modificar) {
@@ -96,4 +115,12 @@ public class MainActivity extends AppCompatActivity {
 //        View view = getWindow().getDecorView();
 //        view.setBackgroundColor(color);
 //    }
+
+
+    public void CChanged(View view) {
+        if (checkBox.isChecked()) {
+            Toast.makeText(getApplicationContext(), "Casilla marcada", Toast.LENGTH_SHORT).show();
+
+        }
+    }
 }
